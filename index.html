@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <!-- 設定文件編碼，確保繁體中文內容能正確顯示。 -->
+  <meta charset="UTF-8">
+  <!-- 讓畫面依照電腦、平板與手機的實際寬度呈現，避免瀏覽器自動縮放。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 網頁標題會顯示在瀏覽器分頁。 -->
+  <title>四年級數學小測驗</title>
+
+  <!-- 使用者指定的 Google Fonts 連線最佳化標籤，請保留原樣。 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Isometra&family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+
+  <style>
+    /* 讓 html 與 body 填滿瀏覽器視窗，避免畫布四周出現空白。 */
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    /* body 使用米白色作為備援背景，並禁止頁面捲動。 */
+    body {
+      background: #fefae0;
+      font-family: "LXGW WenKai Mono TC", "Microsoft JhengHei", sans-serif;
+      overscroll-behavior: none;
+    }
+
+    /* p5.js 建立的 canvas 以區塊顯示，消除 inline 元素可能產生的底部空隙。 */
+    canvas {
+      display: block;
+      touch-action: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- p5.js 會在此頁面建立全螢幕 canvas；測驗介面不依賴其他 DOM 控制元件。 -->
+  <!-- 載入 p5.js 核心程式，必須先於 sketch.js 載入。 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js"></script>
+  <!-- 載入本測驗的完整 p5.js 程式。 -->
+  <script src="sketch.js"></script>
+</body>
+</html>
